@@ -16,7 +16,7 @@ st.markdown('email: parfaittanoh42@gmail.com')
 st.markdown('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
 
 # Chargement du fichier
-df = pd.read_csv("data.csv", encoding="ISO-8859-1")
+df = pd.read_csv("data.csv")
 
 col1, col2 = st.columns((2))
 df["Order Date"] = pd.to_datetime(df["Order Date"])
